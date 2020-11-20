@@ -11,6 +11,10 @@ body {
 
 /**GLOBALES**/
 
+img {
+    max-width: 100%;
+}
+
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
@@ -119,4 +123,16 @@ h4 {
 
 .icono h3 {
     text-transform: uppercase;
+}
+
+
+/**anuncios**/
+
+.contenedor-anuncios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.anuncio {
+    flex-basis: calc(33.3% - 1rem);
 }
