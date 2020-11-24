@@ -191,6 +191,21 @@ p {
     font-weight: 700;
 }
 
+.iconos-caracteristicas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iconos-caracteristicas li {
+    display: flex;
+}
+
+.iconos-caracteristicas img {
+    margin-right: 2rem;
+}
+
 .ver-todas {
     display: flex;
     justify-content: flex-end;
@@ -206,4 +221,18 @@ p {
     height: 40rem;
     display: flex;
     align-items: center;
+}
+
+.contenido-contacto {
+    /*le da algo de tamaño */
+    flex: 1;
+    color: #ffffff;
+}
+
+.contenido-contacto p {
+    font-size: 1.8rem;
+}
+
+.contenido-contacto a {
+    background-color: #E08709;
 }
