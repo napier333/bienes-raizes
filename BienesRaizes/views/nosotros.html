@@ -1,14 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Bienes Raices</title>
 </head>
 
 <body>
-    <h2>Nosotros</h2>
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="../index.html">
+                    <img src="../img/logo.svg" alt="logo del sitio web">
+                </a>
+
+                <nav class="navegacion">
+                    <a href="../views/nosotros.html">Nosotros</a>
+                    <a href="../views/anuncios.html">Anuncios</a>
+                    <a href="../views/blog.html">Blog</a>
+                    <a href="../views/contacto.html">contacto</a>
+                </nav>
+                <!--barra-->
+            </div>
+
+            <!--contenedor-->
+        </div>
+    </header>
+    <main class="contenedor">
+        <h1 class="text-center fw-300">Conoce Sobre Nosotros</h1>
+        <div class="contenido-nosotros">
+            <div class="imagen">
+                <img src="../img/nosotros.jpg" alt="imagen sobre nosotros">
+            </div>
+            <div class="texto-nosotros">
+                <blockquote>25 años de experiencia</blockquote>
+                <p>Nunc euismod scelerisque risus sed consequat. In in velit et metus ultrices maximus ac eget dui. Aenean eget facilisis massa. Morbi ultricies vitae felis sed elementum. Quisque pulvinar lectus et venenatis accumsan. Nullam tincidunt tincidunt
+                    Integer sit amet dui vel lorem hendrerit feugiat. Proin sed rutrum ipsum. Donec sit amet lectus efficitur, tempor orci ac, iaculis nisi. Etiam in nisi eu lorem ultrices porttitor id ultrices lacus.</p>
+
+                <p>ipsum, tincidunt a arcu ac, molestie bibendum lorem. Ut finibus, massa sed aliquam consequat, nunc nunc tincidunt justo, sed aliquam lorem ex eget erat. Aenean sapien urna, laoreet vel velit vitae, congue bibendum lacus. Aliquam id lacus
+                    Nunc iaculis augue quis aliquet condimentum. Quisque sit amet volutpat elit. Nullam at ante at magna congue mattis et et odio. Duis tellus nulla, imperdiet bibendum nisi non, facilisis consectetur ligula. Quisque consectetur porttitor
+                    purus, at ullamcorper dolor interdum vel. Nulla et luctus leo. Morbi maximus mattis justo sed luctus.</p>
+            </div>
+        </div>
+    </main>
+    <section class="contenedor seccion">
+        <h2 class="encabezado-nosotros">Mas sobre nosotros</h2>
+        <div class="iconos-nosotros">
+            <div class="icono">
+                <img src="../img/icono1.svg" alt="icono seguridad">
+                <h3>Seguridad</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quia nemo ratione perferendis</p>
+            </div>
+
+            <div class="icono">
+                <img src="../img/icono2.svg" alt="icono mejor precio">
+                <h3>El Mejor Precio</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quia nemo ratione perferendis</p>
+            </div>
+            <div class="icono">
+                <img src="../img/icono3.svg" alt="icono a tiempo">
+                <h3>A Tiempo</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quia nemo ratione perferendis</p>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer seccion">
+        <div class="contenedor-footer contenedor">
+            <nav class="navegacion">
+                <a href="../views/nosotros.html">Nosotros</a>
+                <a href="./views/anuncios.html">Anuncios</a>
+                <a href="./views/blog.html">Blog</a>
+                <a href="./views/contacto.html">contacto</a>
+            </nav>
+
+            <p>Todos los derechos reservados &copy;</p>
+        </div>
+    </footer>
 </body>
 
 </html>
