@@ -67,6 +67,10 @@ p {
     display: inline-block!important;
 }
 
+.contenido-centrado {
+    max-width: 80rem;
+}
+
 
 /**botones**/
 
@@ -92,6 +96,11 @@ p {
 
 
 /*header*/
+
+.site-header {
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+}
 
 .site-header.inicio {
     background-image: url(../img/header.jpg);
@@ -169,10 +178,17 @@ p {
 .contenedor-anuncios {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .anuncio {
+    margin-bottom: 2rem;
+    /*
+    flex-grow: 0;
+    flex-shrink: 0;
     flex-basis: calc(33.3% - 1rem);
+    */
+    flex: 0 0 calc(33.3% - 1rem);
     border: 1px solid #b5b5b5;
     background-color: #f5f5f5;
 }
@@ -196,6 +212,8 @@ p {
     padding: 0;
     display: flex;
     justify-content: space-evenly;
+    flex: 1;
+    max-width: 50rem;
 }
 
 .iconos-caracteristicas li {
@@ -344,4 +362,32 @@ p {
 .site-footer p {
     margin: 0;
     color: #ffffff;
+}
+
+
+/** internas **/
+
+
+/*Nosotros*/
+
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+
+.texto-nosotros blockquote {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 3rem 0;
+}
+
+
+/*anuncios*/
+
+.resumen-propiedad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
