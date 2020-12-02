@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Bienes Raices</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="../index.html">
+                    <img src="../img/logo.svg" alt="logo del sitio web">
+                </a>
+
+                <nav class="navegacion">
+                    <a href="../views/nosotros.html">Nosotros</a>
+                    <a href="../views/anuncios.html">Anuncios</a>
+                    <a href="../views/blog.html">Blog</a>
+                    <a href="../views/contacto.html">contacto</a>
+                </nav>
+                <!--barra-->
+            </div>
+
+            <!--contenedor-->
+        </div>
+    </header>
+    <h1 class="fw-300 text-center">Contacto</h1>
+    <img src="../img/destacada3.jpg" alt="imagen principal">
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw-300 text-center">Llena el Formulario de Contacto</h2>
+        <form class="contacto" action="">
+            <fieldset>
+                <legend>Informacion personal</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="tu nombre">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="escriba Gmail" required>
+
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" placeholder="telefono" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Informacion Sobre lo que Compra</legend>
+
+                <label for="opciones">Venta o Compra:</label>
+                <select name="opciones" id="opciones">
+                    <option value="" disabled selected>--Selecione--</option>
+                    <option value="compra">Compra</option>
+                    <option value="venta">Venta</option>
+                </select>
+
+                <label for="cantidad">Cantidad</label>
+                <input type="number" min="0">
+            </fieldset>
+            <fieldset>
+                <legend>Contacto </legend>
+                <p>como desea ser contactado:</p>
+                <div class="forma-contacto">
+                    <label for="telefono">Telefono</label>
+                    <input type="radio" name="contacto" id="telefono">
+
+                    <label for="correo">Email</label>
+                    <input type="radio" name="contacto" id="correo">
+                </div>
+                <!--
+                <p>Elija el Menu</p>
+                <input type="checkbox" name="orden" value="hamburguesa">hamburguesa
+                <input type="checkbox" name="orden" value="papas fritas">papas fritas
+                -->
+                <p>si eligio telefono, elija fecha y hora</p>
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha">
+                <label for="hora">Hora</label>
+                <input type="time" id="hora">
+            </fieldset>
+
+            <input class="boton boton-verde" type="submit" placeholder="enviar">
+        </form>
+    </main>
+    <footer class="site-footer seccion">
+        <div class="contenedor-footer contenedor">
+            <nav class="navegacion">
+                <a href="../views/nosotros.html">Nosotros</a>
+                <a href="./views/anuncios.html">Anuncios</a>
+                <a href="./views/blog.html">Blog</a>
+                <a href="./views/contacto.html">contacto</a>
+            </nav>
+
+            <p>Todos los derechos reservados &copy;</p>
+        </div>
+    </footer>
+</body>
+
+</html>
